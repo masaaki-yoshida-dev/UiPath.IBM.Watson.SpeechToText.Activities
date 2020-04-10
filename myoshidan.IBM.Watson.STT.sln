@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "myoshidan.IBM.Watson.STT", "myoshidan.IBM.Watson.STT", "{E06AF510-03D4-4F71-B1D0-57AC61D94405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myoshidan.IBM.Watson.STT", "myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT.csproj", "{6B315A67-FF27-402E-9AAB-4B51E4A27838}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myoshidan.IBM.Watson.STT.Activities", "myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT.Activities\myoshidan.IBM.Watson.STT.Activities.csproj", "{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myoshidan.IBM.Watson.STT.Activities.Design", "myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT.Activities.Design\myoshidan.IBM.Watson.STT.Activities.Design.csproj", "{0C2F94CF-B04F-48C7-B752-64405000D256}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{AD228FCD-58BE-404E-A3F1-0E05DF4DB2F4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B315A67-FF27-402E-9AAB-4B51E4A27838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B315A67-FF27-402E-9AAB-4B51E4A27838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B315A67-FF27-402E-9AAB-4B51E4A27838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B315A67-FF27-402E-9AAB-4B51E4A27838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C2F94CF-B04F-48C7-B752-64405000D256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C2F94CF-B04F-48C7-B752-64405000D256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C2F94CF-B04F-48C7-B752-64405000D256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C2F94CF-B04F-48C7-B752-64405000D256}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B315A67-FF27-402E-9AAB-4B51E4A27838} = {E06AF510-03D4-4F71-B1D0-57AC61D94405}
+		{AB3FF9CF-46A6-4D39-855F-F0B2494ECF79} = {E06AF510-03D4-4F71-B1D0-57AC61D94405}
+		{0C2F94CF-B04F-48C7-B752-64405000D256} = {E06AF510-03D4-4F71-B1D0-57AC61D94405}
+		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {AD228FCD-58BE-404E-A3F1-0E05DF4DB2F4}
+		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {AD228FCD-58BE-404E-A3F1-0E05DF4DB2F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3372F517-BE95-4D55-9A2D-3B37D24128F2}
+	EndGlobalSection
+EndGlobal
