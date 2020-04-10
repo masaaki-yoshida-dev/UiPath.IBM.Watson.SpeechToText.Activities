@@ -9,10 +9,10 @@
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>@ 2020 Company</Copyright>
+    <Description></Description>
+    <Authors>myoshidan</Authors>
+    <Company>myoshidan</Company>
+    <Copyright>@ 2020 myoshidan</Copyright>
     <PackageTags>UiPath Activit𝗒</PackageTags>
     <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
@@ -29,6 +29,10 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Designers\RecognizeAudioFileDesigner.xaml" />
+    <None Remove="Designers\SpeechToTextScopeDesigner.xaml" />
+  </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
     <None Include="packageIcon.png" Pack="true" Visible="false" PackagePath="" />
@@ -50,22 +54,26 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\myoshidan.IBM.Watson.STT.Activities.Design.xml</DocumentationFile>
+    <Product>myoshidan.IBM.Watson.STT.Activities</Product>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="IBM.Watson.SpeechToText.v1" Version="4.3.1" />
+  </ItemGroup>
 	<ItemGroup>
-		<Reference Include="System"/>
-    <Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		<Reference Include="Microsoft.CSharp"/>
+		<Reference Include="System" />
+    <Reference Include="System.Core" />
+		<Reference Include="System.Xml.Linq" />
+		<Reference Include="System.Data.DataSetExtensions" />
+		<Reference Include="Microsoft.CSharp" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-    <Reference Include="System.Activities"/>
-    <Reference Include="System.Activities.Presentation"/>
-    <Reference Include="System.Xaml"/>
-    <Reference Include="WindowsBase"/>
-    <Reference Include="System.Activities.Core.Presentation"/>
+		<Reference Include="System.Data" />
+		<Reference Include="System.Xml" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="System.Activities.Core.Presentation" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
@@ -74,6 +82,12 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
+    <Page Include="Designers\RecognizeAudioFileDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\SpeechToTextScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Themes\Icons.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <SubType>Designer</SubType>
@@ -81,11 +95,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\myoshidan.IBM.Watson.STT.Activities\myoshidan.IBM.Watson.STT.Activities.csproj" PrivateAssets="All"/>
-    <ProjectReference Include="..\myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT.csproj" PrivateAssets="All"/>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Designers\" />
+    <ProjectReference Include="..\myoshidan.IBM.Watson.STT.Activities\myoshidan.IBM.Watson.STT.Activities.csproj" PrivateAssets="All" />
+    <ProjectReference Include="..\myoshidan.IBM.Watson.STT\myoshidan.IBM.Watson.STT.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

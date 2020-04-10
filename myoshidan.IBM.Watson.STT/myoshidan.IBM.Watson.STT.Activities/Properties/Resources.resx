@@ -145,4 +145,107 @@
     <value>Common</value>
     <comment>category</comment>
   </data>
+  <data name="Authentication_Category" xml:space="preserve">
+    <value>Authentication</value>
+    <comment>category</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>Output</value>
+    <comment>category</comment>
+  </data>
+  <data name="Options_Category" xml:space="preserve">
+    <value>Options</value>
+    <comment>category</comment>
+  </data>
+  <data name="ValidationScope_Error" xml:space="preserve">
+    <value>Cannot be used outside of a {0}.</value>
+    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
+  </data>
+  <data name="ValidationValue_Error" xml:space="preserve">
+    <value>Please provide a value for {0}.</value>
+    <comment>error message; {0} is the name of a missing property</comment>
+  </data>
+  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
+    <value>Please provide a value either for {0} or {1}, but not both.</value>
+    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
+  </data>
+  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
+    <value>Please provide values for both {0} and {1}.</value>
+    <comment>error message; {0} &amp; {1} are complementary properties</comment>
+  </data>
+  <data name="SpeechToTextScope_DisplayName" xml:space="preserve">
+    <value>Speech To Text Scope</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="SpeechToTextScope_Description" xml:space="preserve">
+    <value>IBM Watson Speech to Text Scope Activity</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="SpeechToTextScope_APIKey_DisplayName" xml:space="preserve">
+    <value>APIKey</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SpeechToTextScope_APIKey_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="SpeechToTextScope_URL_DisplayName" xml:space="preserve">
+    <value>URL</value>
+    <comment>property name</comment>
+  </data>
+  <data name="SpeechToTextScope_URL_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RecognizeAudioFile_DisplayName" xml:space="preserve">
+    <value>Recognize AudioFile</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="RecognizeAudioFile_Description" xml:space="preserve">
+    <value>Sends audio and returns transcription results for a recognition request.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="RecognizeAudioFile_FilePath_DisplayName" xml:space="preserve">
+    <value>FilePath</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RecognizeAudioFile_FilePath_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RecognizeAudioFile_SpeechRecognitionResults_DisplayName" xml:space="preserve">
+    <value>SpeechRecognitionResults</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RecognizeAudioFile_SpeechRecognitionResults_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RecognizeAudioFile_AudioFormats_DisplayName" xml:space="preserve">
+    <value>AudioFormats</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RecognizeAudioFile_AudioFormats_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RecognizeAudioFile_Model_DisplayName" xml:space="preserve">
+    <value>Model</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RecognizeAudioFile_Model_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RecognizeAudioFile_Transcript_Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RecognizeAudioFile_Transcript_DisplayName" xml:space="preserve">
+    <value>Transcript</value>
+    <comment>property name</comment>
+  </data>
 </root>

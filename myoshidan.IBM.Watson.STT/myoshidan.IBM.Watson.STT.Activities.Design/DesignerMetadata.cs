@@ -1,4 +1,4 @@
-﻿using System.Activities.Presentation.Metadata;
+using System.Activities.Presentation.Metadata;
 using System.ComponentModel;
 using System.ComponentModel.Design;
 using myoshidan.IBM.Watson.STT.Activities.Design.Designers;
@@ -19,6 +19,14 @@ namespace myoshidan.IBM.Watson.STT.Activities.Design
 
             #endregion Setup
 
+
+            builder.AddCustomAttributes(typeof(SpeechToTextScope), categoryAttribute);
+            builder.AddCustomAttributes(typeof(SpeechToTextScope), new DesignerAttribute(typeof(SpeechToTextScopeDesigner)));
+            builder.AddCustomAttributes(typeof(SpeechToTextScope), new HelpKeywordAttribute(""));
+
+            builder.AddCustomAttributes(typeof(RecognizeAudioFile), categoryAttribute);
+            builder.AddCustomAttributes(typeof(RecognizeAudioFile), new DesignerAttribute(typeof(RecognizeAudioFileDesigner)));
+            builder.AddCustomAttributes(typeof(RecognizeAudioFile), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
