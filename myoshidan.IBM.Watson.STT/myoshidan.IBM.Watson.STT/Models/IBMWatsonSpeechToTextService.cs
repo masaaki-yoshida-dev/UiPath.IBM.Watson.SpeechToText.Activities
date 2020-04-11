@@ -63,7 +63,7 @@ namespace myoshidan.IBM.Watson.STT.Models
                 throw new NullReferenceException("SpeechToTextService is not Initialized");
             }
 
-            FileStream fs = new FileStream(filePath, FileMode.Open);
+            FileStream fs = new FileStream(filePath, FileMode.Open,FileAccess.Read,FileShare.ReadWrite);
             byte[] data = new byte[fs.Length];
             fs.Read(data, 0, data.Length);
             fs.Close();
