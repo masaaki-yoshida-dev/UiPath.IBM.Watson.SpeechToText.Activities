@@ -30,8 +30,12 @@
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Designers\ReadStreamingRecognizeDesigner.xaml" />
     <None Remove="Designers\RecognizeAudioFileDesigner.xaml" />
     <None Remove="Designers\SpeechToTextScopeDesigner.xaml" />
+    <None Remove="Designers\SpeechToTextStreamingScopeDesigner.xaml" />
+    <None Remove="Designers\StartStreamingRecognizeDesigner.xaml" />
+    <None Remove="Designers\StopStreamingRecognizeDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -58,6 +62,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IBM.Watson.SpeechToText.v1" Version="4.3.1" />
+    <PackageReference Include="NAudio" Version="1.10.0" />
   </ItemGroup>
 	<ItemGroup>
 		<Reference Include="System" />
@@ -82,10 +87,22 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
+    <Page Include="Designers\ReadStreamingRecognizeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
     <Page Include="Designers\RecognizeAudioFileDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\SpeechToTextScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\SpeechToTextStreamingScopeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\StartStreamingRecognizeDesigner.xaml">
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="Designers\StopStreamingRecognizeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">

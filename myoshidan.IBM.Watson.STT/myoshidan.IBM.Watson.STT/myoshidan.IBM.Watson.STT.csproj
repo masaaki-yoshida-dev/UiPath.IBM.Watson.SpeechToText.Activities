@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>myoshidan.IBM.Watson.STT</RootNamespace>
@@ -46,5 +46,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="IBM.Watson.SpeechToText.v1" Version="4.3.1" />
+    <PackageReference Include="NAudio" Version="1.10.0" />
   </ItemGroup>
 </Project>

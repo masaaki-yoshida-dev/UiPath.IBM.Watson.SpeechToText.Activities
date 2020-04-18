@@ -135,6 +135,42 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
+        public static string ReadStreamingRecognize_Description {
+            get {
+                return ResourceManager.GetString("ReadStreamingRecognize_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ReadStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ReadStreamingRecognize_DisplayName {
+            get {
+                return ResourceManager.GetString("ReadStreamingRecognize_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ReadStreamingRecognize_Transcript_Description {
+            get {
+                return ResourceManager.GetString("ReadStreamingRecognize_Transcript_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Transcript に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ReadStreamingRecognize_Transcript_DisplayName {
+            get {
+                return ResourceManager.GetString("ReadStreamingRecognize_Transcript_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
         public static string RecognizeAudioFile_AudioFormats_Description {
             get {
                 return ResourceManager.GetString("RecognizeAudioFile_AudioFormats_Description", resourceCulture);
@@ -291,6 +327,132 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         public static string SpeechToTextScope_URL_DisplayName {
             get {
                 return ResourceManager.GetString("SpeechToTextScope_URL_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_APIKey_Description {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_APIKey_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   APIKey に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_APIKey_DisplayName {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_APIKey_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_Description {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   SpeechToTextStreamingScope に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_DisplayName {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_Model_Description {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_Model_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Model に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_Model_DisplayName {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_Model_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_Region_Description {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_Region_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Region に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string SpeechToTextStreamingScope_Region_DisplayName {
+            get {
+                return ResourceManager.GetString("SpeechToTextStreamingScope_Region_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   StartStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveCaption_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveCaption_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   LiveCaption に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveCaption_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveCaption_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StopStreamingRecognize_Description {
+            get {
+                return ResourceManager.GetString("StopStreamingRecognize_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   StopStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StopStreamingRecognize_DisplayName {
+            get {
+                return ResourceManager.GetString("StopStreamingRecognize_DisplayName", resourceCulture);
             }
         }
         
