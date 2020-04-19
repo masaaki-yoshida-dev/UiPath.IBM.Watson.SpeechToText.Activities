@@ -177,32 +177,32 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="SpeechToTextScope_DisplayName" xml:space="preserve">
-    <value>Speech To Text Scope</value>
+  <data name="SpeechToTextFileScope_DisplayName" xml:space="preserve">
+    <value>Speech To Text File Scope</value>
     <comment>activity name</comment>
   </data>
-  <data name="SpeechToTextScope_Description" xml:space="preserve">
-    <value>IBM Watson Speech to Text Scope Activity</value>
+  <data name="SpeechToTextFileScope_Description" xml:space="preserve">
+    <value>IBM Watson Speech to Text File Scope </value>
     <comment>activity description</comment>
   </data>
-  <data name="SpeechToTextScope_APIKey_DisplayName" xml:space="preserve">
+  <data name="SpeechToTextFileScope_APIKey_DisplayName" xml:space="preserve">
     <value>APIKey</value>
     <comment>property name</comment>
   </data>
-  <data name="SpeechToTextScope_APIKey_Description" xml:space="preserve">
+  <data name="SpeechToTextFileScope_APIKey_Description" xml:space="preserve">
     <value />
     <comment>property description</comment>
   </data>
-  <data name="SpeechToTextScope_URL_DisplayName" xml:space="preserve">
+  <data name="SpeechToTextFileScope_URL_DisplayName" xml:space="preserve">
     <value>URL</value>
     <comment>property name</comment>
   </data>
-  <data name="SpeechToTextScope_URL_Description" xml:space="preserve">
+  <data name="SpeechToTextFileScope_URL_Description" xml:space="preserve">
     <value />
     <comment>property description</comment>
   </data>
   <data name="RecognizeAudioFile_DisplayName" xml:space="preserve">
-    <value>Recognize AudioFile</value>
+    <value>Recognize Audio File</value>
     <comment>activity name</comment>
   </data>
   <data name="RecognizeAudioFile_Description" xml:space="preserve">
@@ -218,7 +218,7 @@
     <comment>property description</comment>
   </data>
   <data name="RecognizeAudioFile_SpeechRecognitionResults_DisplayName" xml:space="preserve">
-    <value>SpeechRecognitionResults</value>
+    <value>Speech Recognition Results</value>
     <comment>property name</comment>
   </data>
   <data name="RecognizeAudioFile_SpeechRecognitionResults_Description" xml:space="preserve">
@@ -226,7 +226,7 @@
     <comment>property description</comment>
   </data>
   <data name="RecognizeAudioFile_AudioFormats_DisplayName" xml:space="preserve">
-    <value>AudioFormats</value>
+    <value>Audio Formats</value>
     <comment>property name</comment>
   </data>
   <data name="RecognizeAudioFile_AudioFormats_Description" xml:space="preserve">
@@ -249,7 +249,7 @@
     <comment>property name</comment>
   </data>
   <data name="SpeechToTextStreamingScope_DisplayName" xml:space="preserve">
-    <value>SpeechToTextStreamingScope</value>
+    <value>Speech To Text Streaming Scope</value>
     <comment>activity name</comment>
   </data>
   <data name="SpeechToTextStreamingScope_Description" xml:space="preserve">
@@ -281,7 +281,7 @@
     <comment>property description</comment>
   </data>
   <data name="StartStreamingRecognize_DisplayName" xml:space="preserve">
-    <value>StartStreamingRecognize</value>
+    <value>Start Streaming Recognize</value>
     <comment>activity name</comment>
   </data>
   <data name="StartStreamingRecognize_Description" xml:space="preserve">
@@ -289,7 +289,7 @@
     <comment>activity description</comment>
   </data>
   <data name="StopStreamingRecognize_DisplayName" xml:space="preserve">
-    <value>StopStreamingRecognize</value>
+    <value>Stop Streaming Recognize</value>
     <comment>activity name</comment>
   </data>
   <data name="StopStreamingRecognize_Description" xml:space="preserve">
@@ -297,7 +297,7 @@
     <comment>activity description</comment>
   </data>
   <data name="ReadStreamingRecognize_DisplayName" xml:space="preserve">
-    <value>ReadStreamingRecognize</value>
+    <value>Read Streaming Recognize</value>
     <comment>activity name</comment>
   </data>
   <data name="ReadStreamingRecognize_Description" xml:space="preserve">
@@ -316,6 +316,6 @@
     <value />
   </data>
   <data name="StartStreamingRecognize_LiveCaption_DisplayName" xml:space="preserve">
-    <value>LiveCaption</value>
+    <value>Live Caption</value>
   </data>
 </root>

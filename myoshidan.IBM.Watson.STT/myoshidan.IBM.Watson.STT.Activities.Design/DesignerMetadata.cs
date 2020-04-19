@@ -20,9 +20,9 @@ namespace myoshidan.IBM.Watson.STT.Activities.Design
             #endregion Setup
 
 
-            builder.AddCustomAttributes(typeof(SpeechToTextScope), categoryAttribute);
-            builder.AddCustomAttributes(typeof(SpeechToTextScope), new DesignerAttribute(typeof(SpeechToTextScopeDesigner)));
-            builder.AddCustomAttributes(typeof(SpeechToTextScope), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(SpeechToTextFileScope), categoryAttribute);
+            builder.AddCustomAttributes(typeof(SpeechToTextFileScope), new DesignerAttribute(typeof(SpeechToTextFileScopeDesigner)));
+            builder.AddCustomAttributes(typeof(SpeechToTextFileScope), new HelpKeywordAttribute(""));
 
             builder.AddCustomAttributes(typeof(RecognizeAudioFile), categoryAttribute);
             builder.AddCustomAttributes(typeof(RecognizeAudioFile), new DesignerAttribute(typeof(RecognizeAudioFileDesigner)));

@@ -142,7 +142,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   ReadStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        ///   Read Streaming Recognize に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string ReadStreamingRecognize_DisplayName {
             get {
@@ -178,7 +178,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   AudioFormats に類似しているローカライズされた文字列を検索します。
+        ///   Audio Formats に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string RecognizeAudioFile_AudioFormats_DisplayName {
             get {
@@ -196,7 +196,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   Recognize AudioFile に類似しているローカライズされた文字列を検索します。
+        ///   Recognize Audio File に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string RecognizeAudioFile_DisplayName {
             get {
@@ -250,7 +250,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   SpeechRecognitionResults に類似しているローカライズされた文字列を検索します。
+        ///   Speech Recognition Results に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string RecognizeAudioFile_SpeechRecognitionResults_DisplayName {
             get {
@@ -279,54 +279,54 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_APIKey_Description {
+        public static string SpeechToTextFileScope_APIKey_Description {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_APIKey_Description", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_APIKey_Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   APIKey に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_APIKey_DisplayName {
+        public static string SpeechToTextFileScope_APIKey_DisplayName {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_APIKey_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_APIKey_DisplayName", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   IBM Watson Speech to Text Scope Activity に類似しているローカライズされた文字列を検索します。
+        ///   IBM Watson Speech to Text File Scope  に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_Description {
+        public static string SpeechToTextFileScope_Description {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_Description", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_Description", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Speech To Text Scope に類似しているローカライズされた文字列を検索します。
+        ///   Speech To Text File Scope に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_DisplayName {
+        public static string SpeechToTextFileScope_DisplayName {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_DisplayName", resourceCulture);
             }
         }
         
         /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_URL_Description {
+        public static string SpeechToTextFileScope_URL_Description {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_URL_Description", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_URL_Description", resourceCulture);
             }
         }
         
         /// <summary>
         ///   URL に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string SpeechToTextScope_URL_DisplayName {
+        public static string SpeechToTextFileScope_URL_DisplayName {
             get {
-                return ResourceManager.GetString("SpeechToTextScope_URL_DisplayName", resourceCulture);
+                return ResourceManager.GetString("SpeechToTextFileScope_URL_DisplayName", resourceCulture);
             }
         }
         
@@ -358,7 +358,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   SpeechToTextStreamingScope に類似しているローカライズされた文字列を検索します。
+        ///   Speech To Text Streaming Scope に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string SpeechToTextStreamingScope_DisplayName {
             get {
@@ -412,7 +412,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   StartStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        ///   Start Streaming Recognize に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StartStreamingRecognize_DisplayName {
             get {
@@ -430,7 +430,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   LiveCaption に類似しているローカライズされた文字列を検索します。
+        ///   Live Caption に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StartStreamingRecognize_LiveCaption_DisplayName {
             get {
@@ -448,7 +448,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
-        ///   StopStreamingRecognize に類似しているローカライズされた文字列を検索します。
+        ///   Stop Streaming Recognize に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StopStreamingRecognize_DisplayName {
             get {

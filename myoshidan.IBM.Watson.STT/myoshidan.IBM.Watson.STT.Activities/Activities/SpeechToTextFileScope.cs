@@ -14,9 +14,9 @@ namespace myoshidan.IBM.Watson.STT.Activities
     /// <summary>
     /// SpeechToTextScope
     /// </summary>
-    [LocalizedDisplayName(nameof(Resources.SpeechToTextScope_DisplayName))]
-    [LocalizedDescription(nameof(Resources.SpeechToTextScope_Description))]
-    public class SpeechToTextScope : ContinuableAsyncNativeActivity
+    [LocalizedDisplayName(nameof(Resources.SpeechToTextFileScope_DisplayName))]
+    [LocalizedDescription(nameof(Resources.SpeechToTextFileScope_Description))]
+    public class SpeechToTextFileScope : ContinuableAsyncNativeActivity
     {
         #region Properties
 
@@ -31,13 +31,13 @@ namespace myoshidan.IBM.Watson.STT.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.SpeechToTextScope_APIKey_DisplayName))]
-        [LocalizedDescription(nameof(Resources.SpeechToTextScope_APIKey_Description))]
+        [LocalizedDisplayName(nameof(Resources.SpeechToTextFileScope_APIKey_DisplayName))]
+        [LocalizedDescription(nameof(Resources.SpeechToTextFileScope_APIKey_Description))]
         [LocalizedCategory(nameof(Resources.Authentication_Category))]
         public InArgument<string> APIKey { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.SpeechToTextScope_URL_DisplayName))]
-        [LocalizedDescription(nameof(Resources.SpeechToTextScope_URL_Description))]
+        [LocalizedDisplayName(nameof(Resources.SpeechToTextFileScope_URL_DisplayName))]
+        [LocalizedDescription(nameof(Resources.SpeechToTextFileScope_URL_Description))]
         [LocalizedCategory(nameof(Resources.Authentication_Category))]
         public InArgument<string> URL { get; set; }
 
@@ -56,7 +56,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
         /// Speech To Text Scope
         /// </summary>
         /// <param name="objectContainer"></param>
-        public SpeechToTextScope(IObjectContainer objectContainer)
+        public SpeechToTextFileScope(IObjectContainer objectContainer)
         {
             _objectContainer = objectContainer;
 
@@ -69,7 +69,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
         /// <summary>
         /// SpeechToTextScope
         /// </summary>
-        public SpeechToTextScope() : this(new ObjectContainer())
+        public SpeechToTextFileScope() : this(new ObjectContainer())
         {
 
         }

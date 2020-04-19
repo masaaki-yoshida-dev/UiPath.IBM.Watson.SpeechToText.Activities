@@ -32,7 +32,7 @@
   <ItemGroup>
     <None Remove="Designers\ReadStreamingRecognizeDesigner.xaml" />
     <None Remove="Designers\RecognizeAudioFileDesigner.xaml" />
-    <None Remove="Designers\SpeechToTextScopeDesigner.xaml" />
+    <None Remove="Designers\SpeechToTextFileScopeDesigner.xaml" />
     <None Remove="Designers\SpeechToTextStreamingScopeDesigner.xaml" />
     <None Remove="Designers\StartStreamingRecognizeDesigner.xaml" />
     <None Remove="Designers\StopStreamingRecognizeDesigner.xaml" />
@@ -93,7 +93,7 @@
     <Page Include="Designers\RecognizeAudioFileDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\SpeechToTextScopeDesigner.xaml">
+    <Page Include="Designers\SpeechToTextFileScopeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Designers\SpeechToTextStreamingScopeDesigner.xaml">

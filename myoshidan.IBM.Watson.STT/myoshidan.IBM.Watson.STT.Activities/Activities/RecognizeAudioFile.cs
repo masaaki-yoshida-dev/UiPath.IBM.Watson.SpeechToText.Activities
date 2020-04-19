@@ -68,7 +68,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         public RecognizeAudioFile()
         {
-            Constraints.Add(ActivityConstraints.HasParentType<RecognizeAudioFile, SpeechToTextScope>(string.Format(Resources.ValidationScope_Error, Resources.SpeechToTextScope_DisplayName)));
+            Constraints.Add(ActivityConstraints.HasParentType<RecognizeAudioFile, SpeechToTextFileScope>(string.Format(Resources.ValidationScope_Error, Resources.SpeechToTextFileScope_DisplayName)));
         }
 
         #endregion
@@ -102,7 +102,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
         private async Task<List<SpeechRecognitionResult>> ExecuteWithTimeout(AsyncCodeActivityContext context, CancellationToken cancellationToken = default)
         {
             // Object Container: Use objectContainer.Get<T>() to retrieve objects from the scope
-            var objectContainer = context.GetFromContext<IObjectContainer>(SpeechToTextScope.ParentContainerPropertyTag);
+            var objectContainer = context.GetFromContext<IObjectContainer>(SpeechToTextFileScope.ParentContainerPropertyTag);
 
             // Inputs
             var filepath = FilePath.Get(context);
