@@ -2,18 +2,18 @@
   <PropertyGroup>
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>myoshidan.IBM.Watson.STT.Activities.Design</RootNamespace>
-		<AssemblyName>myoshidan.IBM.Watson.STT.Activities.Design</AssemblyName>
-    <PackageId>myoshidan.IBM.Watson.STT.Activities</PackageId>
+		<AssemblyName>myoshidan.IBM.Watson.SpeechToText.Activities.Design</AssemblyName>
+    <PackageId>myoshidan.IBM.Watson.SpeechToText.Activities</PackageId>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description></Description>
+    <Description>This provide Voice Recognition by IBM Watson Speech To Text Cognitive Service</Description>
     <Authors>myoshidan</Authors>
     <Company>myoshidan</Company>
     <Copyright>@ 2020 myoshidan</Copyright>
-    <PackageTags>UiPath Activit𝗒</PackageTags>
+    <PackageTags>UiPath Activit𝗒 IBM Watson SpeechToText Live Caption</PackageTags>
     <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
@@ -58,7 +58,7 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\myoshidan.IBM.Watson.STT.Activities.Design.xml</DocumentationFile>
-    <Product>myoshidan.IBM.Watson.STT.Activities</Product>
+    <Product>myoshidan.IBM.Watson.SpeechToText.Activities</Product>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IBM.Watson.SpeechToText.v1" Version="4.3.1" />
