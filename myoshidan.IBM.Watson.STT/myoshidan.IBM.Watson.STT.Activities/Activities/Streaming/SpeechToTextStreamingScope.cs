@@ -123,10 +123,30 @@ namespace myoshidan.IBM.Watson.STT.Activities
         {
             var service = _objectContainer.Get<IBMWatsonSpeechToTextWebsocketService>();
             service.SendAudioToWatson(e.Buffer).Wait();
+
+            var writer = _objectContainer.Get<TranscriptFileWriter>();
+            if (!string.IsNullOrEmpty(writer.FilePath))
+            {
+                if (service.ResultIndex != writer.Transcripts.Count -1)
+                {
+                    writer.Transcripts.Add(service.Transcipt);
+                }
+                else
+                {
+                    writer.Transcripts[writer.Transcripts.Count-1] = service.Transcipt;
+                }
+                writer.UpdateTranscriptFile();
+            }
+
             if (!string.IsNullOrEmpty(service.Transcipt))
             {
+                var displayText = service.Transcipt;
+                if(displayText.Length > 250)
+                {
+                    displayText = displayText.Substring(displayText.Length - 250, 250);
+                }
                 var label = _objectContainer.Get<Label>();
-                label.Invoke((MethodInvoker)(() => label.Text = service.Transcipt));
+                label.Invoke((MethodInvoker)(() => label.Text = displayText));
             }
         }
 
@@ -157,7 +177,14 @@ namespace myoshidan.IBM.Watson.STT.Activities
             foreach (var obj in disposableObjects)
             {
                 if (obj is IDisposable dispObject)
-                    dispObject.Dispose();
+                    if(obj is Control)
+                    {
+                        (obj as Control).Invoke((MethodInvoker)(() => dispObject.Dispose()));
+                    }
+                    else
+                    {
+                        dispObject.Dispose();
+                    }
             }
             _objectContainer.Clear();
         }

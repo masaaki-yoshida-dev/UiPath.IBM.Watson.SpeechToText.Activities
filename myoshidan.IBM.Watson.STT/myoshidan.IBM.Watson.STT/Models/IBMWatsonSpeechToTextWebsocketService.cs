@@ -18,6 +18,8 @@ namespace myoshidan.IBM.Watson.STT.Models
         public string Model { get; set; }
         public bool IsConnected { get; set; }
         public string Transcipt { get; private set; }
+        public int ResultIndex { get; set; }
+
 
         private static string BaseUrlWithModel = "wss://{0}/speech-to-text/api/v1/recognize?access_token={1}&model={2}";
         private static string BaseUrl = "wss://{0}/speech-to-text/api/v1/recognize?access_token={1}";
@@ -50,7 +52,7 @@ namespace myoshidan.IBM.Watson.STT.Models
             }
 
             await ws.ConnectAsync(url, CancellationToken.None);
-            Console.WriteLine(ws.State);
+            //Console.WriteLine(ws.State);
 
             await ws.SendAsync(OpenMessage, WebSocketMessageType.Text, true, CancellationToken.None);
             await HandleCallback();
@@ -91,7 +93,7 @@ namespace myoshidan.IBM.Watson.STT.Models
 
         public async Task HandleCallback()
         {
-            var buffer = new byte[1024];
+            var buffer = new byte[1048576];
             while (true)
             {
                 var segment = new ArraySegment<byte>(buffer);
@@ -99,7 +101,7 @@ namespace myoshidan.IBM.Watson.STT.Models
                 try
                 {
                     result = await ws.ReceiveAsync(segment, CancellationToken.None);
-                    Console.WriteLine($"Recieve MessageType:{result.MessageType}");
+                    Console.WriteLine($"Recieve MessageType:{result.MessageType},BufLen:{result.Count}");
                 }
                 catch (Exception ex)
                 {
@@ -130,9 +132,7 @@ namespace myoshidan.IBM.Watson.STT.Models
                 }
                 var jsonObj = JsonConvert.DeserializeObject<StreamingRecognizeResponse>(message);
                 Transcipt = jsonObj.results.FirstOrDefault().alternatives.FirstOrDefault().transcript;
-                // logging
-                Console.WriteLine(jsonObj.results.FirstOrDefault().alternatives.FirstOrDefault().transcript);
-
+                ResultIndex = jsonObj.result_index;
             }
         }
 

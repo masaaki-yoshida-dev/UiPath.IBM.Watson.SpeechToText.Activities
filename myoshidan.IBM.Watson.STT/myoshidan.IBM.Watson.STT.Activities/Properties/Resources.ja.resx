@@ -154,7 +154,7 @@
     <comment>activity description</comment>
   </data>
   <data name="ReadStreamingRecognize_DisplayName" xml:space="preserve">
-    <value>Read Streaming Recognize</value>
+    <value>ストリーミング音声認識結果を取得</value>
     <comment>activity name</comment>
   </data>
   <data name="ReadStreamingRecognize_Transcript_Description" xml:space="preserve">
@@ -195,14 +195,6 @@
   </data>
   <data name="RecognizeAudioFile_Model_DisplayName" xml:space="preserve">
     <value>言語モデル</value>
-    <comment>property name</comment>
-  </data>
-  <data name="RecognizeAudioFile_SpeechRecognitionResults_Description" xml:space="preserve">
-    <value />
-    <comment>property description</comment>
-  </data>
-  <data name="RecognizeAudioFile_SpeechRecognitionResults_DisplayName" xml:space="preserve">
-    <value>SpeechRecognitionResults</value>
     <comment>property name</comment>
   </data>
   <data name="RecognizeAudioFile_Transcript_Description" xml:space="preserve">
@@ -275,6 +267,14 @@
   <data name="StartStreamingRecognize_DisplayName" xml:space="preserve">
     <value>ストリーミング音声認識を開始</value>
     <comment>activity name</comment>
+  </data>
+  <data name="StartStreamingRecognize_ExportFilePath_Description" xml:space="preserve">
+    <value>音声認識結果テキストを出力するテキストファイルパスを指定します。</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_ExportFilePath_DisplayName" xml:space="preserve">
+    <value>出力ファイルパス</value>
+    <comment>property name</comment>
   </data>
   <data name="StartStreamingRecognize_LiveCaption_Description" xml:space="preserve">
     <value>画面に字幕を表示します</value>

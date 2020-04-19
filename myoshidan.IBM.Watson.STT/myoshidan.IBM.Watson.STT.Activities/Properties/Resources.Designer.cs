@@ -403,6 +403,24 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
+        ///   Specify the text file path to output the voice recognition result text. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_ExportFilePath_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_ExportFilePath_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Export FilePath に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_ExportFilePath_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_ExportFilePath_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StartStreamingRecognize_LiveCaption_Description {

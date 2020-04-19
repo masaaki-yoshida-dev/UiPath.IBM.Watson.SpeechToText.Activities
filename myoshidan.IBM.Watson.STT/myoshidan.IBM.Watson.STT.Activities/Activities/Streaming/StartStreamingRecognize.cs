@@ -36,6 +36,11 @@ namespace myoshidan.IBM.Watson.STT.Activities
         [LocalizedDescription(nameof(Resources.StartStreamingRecognize_LiveCaption_Description))]
         public bool LiveCaption { get; set; }
 
+        [LocalizedCategory(nameof(Resources.Options_Category))]
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_ExportFilePath_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_ExportFilePath_Description))]
+        public InArgument<string> ExportFilePath { get; set; }
+
         #endregion
 
 
@@ -59,8 +64,12 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
+            var objectContainer = context.GetFromContext<IObjectContainer>(SpeechToTextStreamingScope.ParentContainerPropertyTag);
             // Inputs
             var timeout = TimeoutMS.Get(context);
+            var filePath = ExportFilePath.Get(context);
+            var writer = new TranscriptFileWriter(filePath);
+            objectContainer.Add(writer);
 
             // Set a timeout on the execution
             var task = ExecuteWithTimeout(context, cancellationToken);
@@ -86,7 +95,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
             {
                 CreateLiveCaptionForm(objectContainer);
             }
-
+            
             await Task.Delay(1000);
             service.HandleCallback();
            

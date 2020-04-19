@@ -28,10 +28,7 @@ namespace myoshidan.IBM.Watson.STT.Models
                 { "apikey", apikey },
             };
             var content = new FormUrlEncodedContent(parameters);
-
             var response = await _client.PostAsync(_authUrl, content);
-            Console.WriteLine(await response.Content.ReadAsStringAsync());
-
             return JsonConvert.DeserializeObject<AccessToken>(await response.Content.ReadAsStringAsync()).access_token;
         }
     }

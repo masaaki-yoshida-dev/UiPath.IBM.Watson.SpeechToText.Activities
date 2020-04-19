@@ -306,8 +306,18 @@
   </data>
   <data name="StartStreamingRecognize_LiveCaption_Description" xml:space="preserve">
     <value />
+    <comment>property description</comment>
   </data>
   <data name="StartStreamingRecognize_LiveCaption_DisplayName" xml:space="preserve">
     <value>Live Caption</value>
+    <comment>property name</comment>
+  </data>
+  <data name="StartStreamingRecognize_ExportFilePath_Description" xml:space="preserve">
+    <value>Specify the text file path to output the voice recognition result text.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_ExportFilePath_DisplayName" xml:space="preserve">
+    <value>Export FilePath</value>
+    <comment>property name</comment>
   </data>
 </root>
