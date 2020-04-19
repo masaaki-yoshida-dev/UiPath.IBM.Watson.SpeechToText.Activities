@@ -117,8 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Category" xml:space="preserve">
-    <value>myoshidan.IBM.Watson.STT</value>
+  <data name="CategoryFile" xml:space="preserve">
+    <value>myoshidan.IBMWatson.SpeechToText.File</value>
+    <comment>category</comment>
+  </data>
+  <data name="CategoryStreaming" xml:space="preserve">
+    <value>myoshidan.IBMWatson.SpeechToText.Streaming</value>
     <comment>category</comment>
   </data>
   <data name="Collection" xml:space="preserve">

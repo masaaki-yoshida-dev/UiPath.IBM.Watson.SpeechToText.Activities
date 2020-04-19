@@ -30,12 +30,12 @@
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Designers\ReadStreamingRecognizeDesigner.xaml" />
-    <None Remove="Designers\RecognizeAudioFileDesigner.xaml" />
-    <None Remove="Designers\SpeechToTextFileScopeDesigner.xaml" />
-    <None Remove="Designers\SpeechToTextStreamingScopeDesigner.xaml" />
-    <None Remove="Designers\StartStreamingRecognizeDesigner.xaml" />
-    <None Remove="Designers\StopStreamingRecognizeDesigner.xaml" />
+    <None Remove="Designers\Streaming\ReadStreamingRecognizeDesigner.xaml" />
+    <None Remove="Designers\File\RecognizeAudioFileDesigner.xaml" />
+    <None Remove="Designers\File\SpeechToTextFileScopeDesigner.xaml" />
+    <None Remove="Designers\Streaming\SpeechToTextStreamingScopeDesigner.xaml" />
+    <None Remove="Designers\Streaming\StartStreamingRecognizeDesigner.xaml" />
+    <None Remove="Designers\Streaming\StopStreamingRecognizeDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -87,22 +87,22 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
-    <Page Include="Designers\ReadStreamingRecognizeDesigner.xaml">
+    <Page Include="Designers\Streaming\ReadStreamingRecognizeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\RecognizeAudioFileDesigner.xaml">
+    <Page Include="Designers\File\RecognizeAudioFileDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\SpeechToTextFileScopeDesigner.xaml">
+    <Page Include="Designers\File\SpeechToTextFileScopeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\SpeechToTextStreamingScopeDesigner.xaml">
+    <Page Include="Designers\Streaming\SpeechToTextStreamingScopeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\StartStreamingRecognizeDesigner.xaml">
+    <Page Include="Designers\Streaming\StartStreamingRecognizeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Designers\StopStreamingRecognizeDesigner.xaml">
+    <Page Include="Designers\Streaming\StopStreamingRecognizeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">
