@@ -30,11 +30,20 @@
             </Grid.RowDefinitions>
 
             <Label Content="{x:Static activity:Resources.RecognizeAudioFile_FilePath_DisplayName}" Grid.Row="0" />
-            <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[FilePath].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.RecognizeAudioFile_FilePath_Description}" UseLocationExpression="False">
-                <sapv:ExpressionTextBox.Expression>
-                    <Binding Path="ModelItem.FilePath" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
-                </sapv:ExpressionTextBox.Expression>
-            </sapv:ExpressionTextBox>
+            <uip:FilePathControl Grid.Row="1"
+                Filter="Audio Files| *.flac;*.mp3;*.wav"
+                ModelItem="{Binding ModelItem}"
+                Expression="{Binding ModelItem.FilePath, 
+                                    ConverterParameter=In, 
+                                    Converter={StaticResource ArgumentToExpressionConverter},
+                                    Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                PropertyName="FilePath"
+                IsSaveDialog="False"
+                Title="Choose Audio Files"
+                CheckFileExists="False">
+
+            </uip:FilePathControl>
+
         </Grid>
     </uip:ActivityDecoratorControl>
 </sap:ActivityDesigner>
