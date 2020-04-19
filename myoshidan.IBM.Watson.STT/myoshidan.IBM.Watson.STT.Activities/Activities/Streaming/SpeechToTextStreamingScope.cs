@@ -39,18 +39,18 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         [LocalizedDisplayName(nameof(Resources.SpeechToTextStreamingScope_Region_DisplayName))]
         [LocalizedDescription(nameof(Resources.SpeechToTextStreamingScope_Region_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
+        [LocalizedCategory(nameof(Resources.Authentication_Category))]
         [TypeConverter(typeof(EnumNameConverter<Region>))]
         public Region Region { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SpeechToTextStreamingScope_APIKey_DisplayName))]
         [LocalizedDescription(nameof(Resources.SpeechToTextStreamingScope_APIKey_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
+        [LocalizedCategory(nameof(Resources.Authentication_Category))]
         public InArgument<string> APIKey { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.SpeechToTextStreamingScope_Model_DisplayName))]
         [LocalizedDescription(nameof(Resources.SpeechToTextStreamingScope_Model_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
+        [LocalizedCategory(nameof(Resources.Options_Category))]
         [TypeConverter(typeof(EnumNameConverter<AudioModel>))]
         public AudioModel Model { get; set; }
 

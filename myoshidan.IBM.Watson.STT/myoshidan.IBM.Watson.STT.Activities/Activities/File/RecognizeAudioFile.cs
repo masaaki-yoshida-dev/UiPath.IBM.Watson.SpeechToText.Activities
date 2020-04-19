@@ -39,11 +39,6 @@ namespace myoshidan.IBM.Watson.STT.Activities
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<string> FilePath { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.RecognizeAudioFile_SpeechRecognitionResults_DisplayName))]
-        [LocalizedDescription(nameof(Resources.RecognizeAudioFile_SpeechRecognitionResults_Description))]
-        [LocalizedCategory(nameof(Resources.Output_Category))]
-        public OutArgument<List<SpeechRecognitionResult>> SpeechRecognitionResults { get; set; }
-
         [LocalizedDisplayName(nameof(Resources.RecognizeAudioFile_Transcript_DisplayName))]
         [LocalizedDescription(nameof(Resources.RecognizeAudioFile_Transcript_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
@@ -94,7 +89,6 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
             // Outputs
             return (ctx) => {
-                SpeechRecognitionResults.Set(ctx, task.Result);
                 Transcript.Set(ctx, task.Result.FirstOrDefault().Alternatives.FirstOrDefault().Transcript);
             };
         }

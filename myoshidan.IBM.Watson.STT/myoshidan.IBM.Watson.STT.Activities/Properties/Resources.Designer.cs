@@ -243,24 +243,6 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
-        public static string RecognizeAudioFile_SpeechRecognitionResults_Description {
-            get {
-                return ResourceManager.GetString("RecognizeAudioFile_SpeechRecognitionResults_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Speech Recognition Results に類似しているローカライズされた文字列を検索します。
-        /// </summary>
-        public static string RecognizeAudioFile_SpeechRecognitionResults_DisplayName {
-            get {
-                return ResourceManager.GetString("RecognizeAudioFile_SpeechRecognitionResults_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///    に類似しているローカライズされた文字列を検索します。
-        /// </summary>
         public static string RecognizeAudioFile_Transcript_Description {
             get {
                 return ResourceManager.GetString("RecognizeAudioFile_Transcript_Description", resourceCulture);
