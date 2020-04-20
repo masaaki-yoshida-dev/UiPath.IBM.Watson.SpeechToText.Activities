@@ -260,6 +260,14 @@
     <value>リージョン</value>
     <comment>property name</comment>
   </data>
+  <data name="StartStreamingRecognize_APIKey_Description" xml:space="preserve">
+    <value>IBM Language Translator APIキーを入力してください</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_APIKey_DisplayName" xml:space="preserve">
+    <value>翻訳APIキー</value>
+    <comment>property name</comment>
+  </data>
   <data name="StartStreamingRecognize_Description" xml:space="preserve">
     <value />
     <comment>activity description</comment>
@@ -284,6 +292,20 @@
     <value>字幕表示</value>
     <comment>activity name</comment>
   </data>
+  <data name="StartStreamingRecognize_ModelId_Description" xml:space="preserve">
+    <value>翻訳Model ID</value>
+  </data>
+  <data name="StartStreamingRecognize_ModelId_DisplayName" xml:space="preserve">
+    <value>翻訳Model ID</value>
+  </data>
+  <data name="StartStreamingRecognize_URL_Description" xml:space="preserve">
+    <value>IBM Language Translator URLを入力してください</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_URL_DisplayName" xml:space="preserve">
+    <value>翻訳URL</value>
+    <comment>property name</comment>
+  </data>
   <data name="StopStreamingRecognize_Description" xml:space="preserve">
     <value />
     <comment>activity description</comment>
@@ -303,6 +325,10 @@
   <data name="Timeout_Error" xml:space="preserve">
     <value>アクティビティはタイムアウトし、キャンセルされました。</value>
     <comment>error message</comment>
+  </data>
+  <data name="Translator_Category" xml:space="preserve">
+    <value>翻訳</value>
+    <comment>category</comment>
   </data>
   <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
     <value>{0}または{1}のどちらか一方の値を指定してください。両方を指定することはできません。</value>

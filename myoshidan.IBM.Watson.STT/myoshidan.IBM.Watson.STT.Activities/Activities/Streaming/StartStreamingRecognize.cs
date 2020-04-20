@@ -41,6 +41,20 @@ namespace myoshidan.IBM.Watson.STT.Activities
         [LocalizedDescription(nameof(Resources.StartStreamingRecognize_ExportFilePath_Description))]
         public InArgument<string> ExportFilePath { get; set; }
 
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_APIKey_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_APIKey_Description))]
+        [LocalizedCategory(nameof(Resources.Translator_Category))]
+        public InArgument<string> TranslatorAPIKey { get; set; }
+
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_URL_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_URL_Description))]
+        [LocalizedCategory(nameof(Resources.Translator_Category))]
+        public InArgument<string> TranslatorURL { get; set; }
+
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_ModelId_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_ModelId_Description))]
+        [LocalizedCategory(nameof(Resources.Translator_Category))]
+        public InArgument<string> TranslatorModelId { get; set; }
         #endregion
 
 
@@ -58,7 +72,6 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
             base.CacheMetadata(metadata);
         }
 
@@ -70,6 +83,16 @@ namespace myoshidan.IBM.Watson.STT.Activities
             var filePath = ExportFilePath.Get(context);
             var writer = new TranscriptFileWriter(filePath);
             objectContainer.Add(writer);
+
+            var transApikey = TranslatorAPIKey.Get(context);
+            var transUrl = TranslatorURL.Get(context);
+            var modelID = TranslatorModelId.Get(context);
+            if (!string.IsNullOrEmpty(transApikey) && !string.IsNullOrEmpty(transUrl) && !string.IsNullOrEmpty(modelID))
+            {
+                var transService = new IBMWatsonLanguageTranslatorService(transApikey, transUrl);
+                transService.ModelId = modelID;
+                objectContainer.Add(transService);
+            }
 
             // Set a timeout on the execution
             var task = ExecuteWithTimeout(context, cancellationToken);

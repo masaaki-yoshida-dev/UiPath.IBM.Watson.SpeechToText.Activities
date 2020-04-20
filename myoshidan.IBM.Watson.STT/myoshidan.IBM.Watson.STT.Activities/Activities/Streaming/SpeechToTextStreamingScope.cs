@@ -124,23 +124,39 @@ namespace myoshidan.IBM.Watson.STT.Activities
             var service = _objectContainer.Get<IBMWatsonSpeechToTextWebsocketService>();
             service.SendAudioToWatson(e.Buffer).Wait();
 
+            var transcriptText = service.Transcipt;
+            if (string.IsNullOrEmpty(service.Transcipt)) return;
+
+            if (_objectContainer.Contains<IBMWatsonLanguageTranslatorService>())
+            {
+                var translator = _objectContainer.Get<IBMWatsonLanguageTranslatorService>();
+                if((DateTime.Now - translator.LastUpdate).TotalSeconds > 2)
+                {
+                    transcriptText = translator.Translate(transcriptText);
+                }
+                else
+                {
+                    return;
+                }
+            }
+
             var writer = _objectContainer.Get<TranscriptFileWriter>();
             if (!string.IsNullOrEmpty(writer.FilePath))
             {
                 if (service.ResultIndex != writer.Transcripts.Count -1)
                 {
-                    writer.Transcripts.Add(service.Transcipt);
+                    writer.Transcripts.Add(transcriptText);
                 }
                 else
                 {
-                    writer.Transcripts[writer.Transcripts.Count-1] = service.Transcipt;
+                    writer.Transcripts[writer.Transcripts.Count-1] = transcriptText;
                 }
                 writer.UpdateTranscriptFile();
             }
 
-            if (!string.IsNullOrEmpty(service.Transcipt))
+            if (!string.IsNullOrEmpty(transcriptText))
             {
-                var displayText = service.Transcipt;
+                var displayText = transcriptText;
                 if(displayText.Length > 250)
                 {
                     displayText = displayText.Substring(displayText.Length - 250, 250);

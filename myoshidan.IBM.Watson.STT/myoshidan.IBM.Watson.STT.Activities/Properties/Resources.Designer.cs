@@ -387,6 +387,24 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
+        public static string StartStreamingRecognize_APIKey_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_APIKey_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Translator APIKey に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_APIKey_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_APIKey_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
         public static string StartStreamingRecognize_Description {
             get {
                 return ResourceManager.GetString("StartStreamingRecognize_Description", resourceCulture);
@@ -439,6 +457,42 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
+        ///   Translator Model Id に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_ModelId_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_ModelId_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Translator Model Id に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_ModelId_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_ModelId_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///    に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_URL_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_URL_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Translator URL に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_URL_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_URL_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///    に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StopStreamingRecognize_Description {
@@ -480,6 +534,15 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         public static string Timeout_Error {
             get {
                 return ResourceManager.GetString("Timeout_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Translator に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string Translator_Category {
+            get {
+                return ResourceManager.GetString("Translator_Category", resourceCulture);
             }
         }
         

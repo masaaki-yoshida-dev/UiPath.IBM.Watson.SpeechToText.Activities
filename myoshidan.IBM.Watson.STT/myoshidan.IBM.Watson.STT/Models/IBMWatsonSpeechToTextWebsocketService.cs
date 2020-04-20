@@ -101,7 +101,7 @@ namespace myoshidan.IBM.Watson.STT.Models
                 try
                 {
                     result = await ws.ReceiveAsync(segment, CancellationToken.None);
-                    Console.WriteLine($"Recieve MessageType:{result.MessageType},BufLen:{result.Count}");
+                    //Console.WriteLine($"Recieve MessageType:{result.MessageType},BufLen:{result.Count}");
                 }
                 catch (Exception ex)
                 {
