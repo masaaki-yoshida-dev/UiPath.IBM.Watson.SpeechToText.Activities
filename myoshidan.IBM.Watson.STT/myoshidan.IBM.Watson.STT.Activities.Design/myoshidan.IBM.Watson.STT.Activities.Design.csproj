@@ -14,7 +14,7 @@
     <Company>myoshidan</Company>
     <Copyright>@ 2020 myoshidan</Copyright>
     <PackageTags>UiPath Activit𝗒 IBM Watson SpeechToText Live Caption</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/masaaki-yoshida-dev/myoshidan.LiveCaptionTranslator.Activities</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
@@ -24,10 +24,10 @@
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>0.1.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.0</PackageVersion>
+    <PackageVersion>1.0.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Designers\File\RecognizeAudioFileDesigner.xaml.cs" />
@@ -44,10 +44,10 @@
     <None Remove="Designers\Streaming\SpeechToTextStreamingScopeDesigner.xaml" />
     <None Remove="Designers\Streaming\StartStreamingRecognizeDesigner.xaml" />
     <None Remove="Designers\Streaming\StopStreamingRecognizeDesigner.xaml" />
-    <None Include="packageIcon.png">
+    <EmbeddedResource Include="Themes\packageIcon.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
-    </None>
+    </EmbeddedResource>    
   </ItemGroup>
   <!-- Package Icon -->
   <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="BuildOnlySettings;ResolveReferences">
@@ -107,11 +107,11 @@
     <Page Include="Designers\Streaming\StopStreamingRecognizeDesigner.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
     </Page>
-    <Page Include="Themes\Icons.xaml">
+    <Resource Include="Themes\Icons.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Page>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\myoshidan.IBM.Watson.STT.Activities\myoshidan.IBM.Watson.STT.Activities.csproj" PrivateAssets="All" />
@@ -136,5 +136,6 @@
   <ItemGroup>
     <Folder Include="Designers\File\" />
   </ItemGroup>
+
   <Import Project="..\..\Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems" Label="Shared" />
 </Project>
