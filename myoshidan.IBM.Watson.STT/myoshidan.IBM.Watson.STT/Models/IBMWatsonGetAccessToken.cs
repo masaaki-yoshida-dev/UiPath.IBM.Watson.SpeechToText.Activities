@@ -29,7 +29,14 @@ namespace myoshidan.IBM.Watson.STT.Models
             };
             var content = new FormUrlEncodedContent(parameters);
             var response = await _client.PostAsync(_authUrl, content);
-            return JsonConvert.DeserializeObject<AccessToken>(await response.Content.ReadAsStringAsync()).access_token;
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<AccessToken>(await response.Content.ReadAsStringAsync()).access_token;
+            }
+            else
+            {
+                throw new HttpRequestException($"IBM Cloud Autentication Error occurred. StatusCode:{(int)response.StatusCode} {response.StatusCode}");
+            }
         }
     }
 }
