@@ -124,6 +124,11 @@ namespace myoshidan.IBM.Watson.STT.Activities
             var service = _objectContainer.Get<IBMWatsonSpeechToTextWebsocketService>();
             service.SendAudioToWatson(e.Buffer).Wait();
 
+            if (_objectContainer.Contains<Form>() && _objectContainer.Get<Form>().TopMost)
+            {
+                _objectContainer.Get<Form>().TopMost = true; ;
+            }
+
             var transcriptText = service.Transcipt;
             if (string.IsNullOrEmpty(service.Transcipt)) return;
 
@@ -140,9 +145,10 @@ namespace myoshidan.IBM.Watson.STT.Activities
                 }
             }
 
-            var writer = _objectContainer.Get<TranscriptFileWriter>();
-            if (!string.IsNullOrEmpty(writer.FilePath))
+            
+            if (_objectContainer.Contains<TranscriptFileWriter>())
             {
+                var writer = _objectContainer.Get<TranscriptFileWriter>();
                 if (service.ResultIndex != writer.Transcripts.Count -1)
                 {
                     writer.Transcripts.Add(transcriptText);

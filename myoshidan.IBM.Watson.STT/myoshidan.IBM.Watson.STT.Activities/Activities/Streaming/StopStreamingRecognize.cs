@@ -31,7 +31,6 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         #endregion
 
-
         #region Constructors
 
         public StopStreamingRecognize()
@@ -41,12 +40,10 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         #endregion
 
-
         #region Protected Methods
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-
             base.CacheMetadata(metadata);
         }
 
