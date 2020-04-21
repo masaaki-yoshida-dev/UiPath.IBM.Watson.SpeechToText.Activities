@@ -37,6 +37,16 @@ namespace myoshidan.IBM.Watson.STT.Activities
         public bool LiveCaption { get; set; }
 
         [LocalizedCategory(nameof(Resources.Options_Category))]
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_LiveTranslator_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_LiveTranslator_Description))]
+        public bool LiveTranslator { get; set; }
+
+        [LocalizedCategory(nameof(Resources.Options_Category))]
+        [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_LiveCaptionTopMost_DisplayName))]
+        [LocalizedDescription(nameof(Resources.StartStreamingRecognize_LiveCaptionTopMost_Description))]
+        public bool LiveCaptionTopMost { get; set; }
+
+        [LocalizedCategory(nameof(Resources.Options_Category))]
         [LocalizedDisplayName(nameof(Resources.StartStreamingRecognize_ExportFilePath_DisplayName))]
         [LocalizedDescription(nameof(Resources.StartStreamingRecognize_ExportFilePath_Description))]
         public InArgument<string> ExportFilePath { get; set; }
@@ -57,7 +67,6 @@ namespace myoshidan.IBM.Watson.STT.Activities
         public InArgument<string> TranslatorModelId { get; set; }
         #endregion
 
-
         #region Constructors
 
         public StartStreamingRecognize()
@@ -67,11 +76,23 @@ namespace myoshidan.IBM.Watson.STT.Activities
 
         #endregion
 
-
         #region Protected Methods
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
+            if (LiveTranslator && TranslatorAPIKey == null)
+            {
+                metadata.AddValidationError(string.Format(Resources.ValidationValue_LiveTranslator_Error, nameof(TranslatorAPIKey)));
+            }
+            else if(LiveTranslator && TranslatorURL == null)
+            {
+                metadata.AddValidationError(string.Format(Resources.ValidationValue_LiveTranslator_Error, nameof(TranslatorURL)));
+            }
+            else if (LiveTranslator && TranslatorModelId == null)
+            {
+                metadata.AddValidationError(string.Format(Resources.ValidationValue_LiveTranslator_Error, nameof(TranslatorModelId)));
+            }
+
             base.CacheMetadata(metadata);
         }
 
@@ -81,17 +102,26 @@ namespace myoshidan.IBM.Watson.STT.Activities
             // Inputs
             var timeout = TimeoutMS.Get(context);
             var filePath = ExportFilePath.Get(context);
-            var writer = new TranscriptFileWriter(filePath);
-            objectContainer.Add(writer);
-
             var transApikey = TranslatorAPIKey.Get(context);
             var transUrl = TranslatorURL.Get(context);
             var modelID = TranslatorModelId.Get(context);
-            if (!string.IsNullOrEmpty(transApikey) && !string.IsNullOrEmpty(transUrl) && !string.IsNullOrEmpty(modelID))
+
+            if (!string.IsNullOrEmpty(filePath))
+            {
+                var writer = new TranscriptFileWriter(filePath);
+                objectContainer.Add(writer);
+            }
+
+            if (LiveTranslator && !string.IsNullOrEmpty(transApikey) && !string.IsNullOrEmpty(transUrl) && !string.IsNullOrEmpty(modelID))
             {
                 var transService = new IBMWatsonLanguageTranslatorService(transApikey, transUrl);
                 transService.ModelId = modelID;
                 objectContainer.Add(transService);
+            }
+
+            if (LiveCaption)
+            {
+                CreateLiveCaptionForm(objectContainer);
             }
 
             // Set a timeout on the execution
@@ -114,14 +144,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
             var recoder = objectContainer.Get<AudioMemoryRecorder>();
             recoder.Start();
 
-            if (LiveCaption)
-            {
-                CreateLiveCaptionForm(objectContainer);
-            }
-            
-            await Task.Delay(1000);
             service.HandleCallback();
-           
         }
 
         #endregion
@@ -140,7 +163,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
                 f.StartPosition = FormStartPosition.Manual;
                 f.Location = new Point(0, (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.9));
                 f.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, (int)(Screen.PrimaryScreen.WorkingArea.Height * 0.1));
-                f.TopMost = true;
+                f.TopMost = LiveCaptionTopMost;
                 f.ShowInTaskbar = false;
 
                 var label = new Label();
@@ -153,6 +176,7 @@ namespace myoshidan.IBM.Watson.STT.Activities
                 label.Text = "";
                 f.Controls.Add(label);
                 objectContainer.Add(label);
+                objectContainer.Add(f);
 
                 Application.EnableVisualStyles();
                 Application.Run(f);
