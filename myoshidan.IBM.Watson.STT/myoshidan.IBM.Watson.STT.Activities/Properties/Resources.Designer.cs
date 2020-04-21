@@ -457,6 +457,42 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         }
         
         /// <summary>
+        ///   If checked, Display Live Caption always top most on screen. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveCaptionTopMost_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveCaptionTopMost_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Live Caption Top Most に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveCaptionTopMost_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveCaptionTopMost_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   If checked, Translate voice recognition result に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveTranslator_Description {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveTranslator_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Live Translator に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string StartStreamingRecognize_LiveTranslator_DisplayName {
+            get {
+                return ResourceManager.GetString("StartStreamingRecognize_LiveTranslator_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Translator Model Id に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string StartStreamingRecognize_ModelId_Description {
@@ -579,6 +615,15 @@ namespace myoshidan.IBM.Watson.STT.Activities.Properties {
         public static string ValidationValue_Error {
             get {
                 return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   If LiveTranslator checked, Please provide a value for {0}. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string ValidationValue_LiveTranslator_Error {
+            get {
+                return ResourceManager.GetString("ValidationValue_LiveTranslator_Error", resourceCulture);
             }
         }
     }
