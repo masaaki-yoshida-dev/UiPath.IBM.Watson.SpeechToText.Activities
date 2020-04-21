@@ -36,7 +36,7 @@ namespace myoshidan.IBM.Watson.STT.Models
             this._WaveIn.DataAvailable += this.WaveInOnDataAvailable;
             this._WaveIn.RecordingStopped += this.WaveInOnRecordingStopped;
             this._Stream = new MemoryStream();
-            this._WaveFileWriter = new WaveFileWriter(this._Stream, new WaveFormat(16000, 1));
+            this._WaveFileWriter = new WaveFileWriter(this._Stream, new WaveFormat(16000, 2));
             this.lastPos = 0;
         }
 
@@ -110,10 +110,10 @@ namespace myoshidan.IBM.Watson.STT.Models
                     var sampleStream = new WaveToSampleProvider(inputStream);
                     var resamplingProvider = new WdlResamplingSampleProvider(sampleStream, 16000);
                     var ieeeToPCM = new SampleToWaveProvider16(resamplingProvider);
-                    var sampleStreams = new StereoToMonoProvider16(ieeeToPCM);
-                    sampleStreams.RightVolume = 0.5f;
-                    sampleStreams.LeftVolume = 0.5f;
-                    return readStream(sampleStreams, length);
+                    //var sampleStreams = new StereoToMonoProvider16(ieeeToPCM);
+                    //sampleStreams.RightVolume = 0.5f;
+                    //sampleStreams.LeftVolume = 0.5f;
+                    return readStream(ieeeToPCM, length);
                 }
             }
         }
