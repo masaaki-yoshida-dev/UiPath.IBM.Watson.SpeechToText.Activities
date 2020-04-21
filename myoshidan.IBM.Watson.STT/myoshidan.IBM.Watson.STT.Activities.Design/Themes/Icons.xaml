@@ -10,12 +10,153 @@
 
     <!--Simple Activity Icon-->
     <Geometry x:Key="SimpleGeometry">F1 M50,50z M0,0z M25,2C12.318,2 2,12.317 2,25 2,37.683 12.318,48 25,48 37.682,48 48,37.683 48,25 48,12.317 37.682,2 25,2z M18.042,36.034L17.959,14.038 37,24.964 18.042,36.034z</Geometry>
-    <DrawingGroup x:Key="SimpleDrawingGroup" ClipGeometry="M0,0 V50 H50 V0 H0 Z">
-        <GeometryDrawing Brush="#FFFA4616" Geometry="{StaticResource SimpleGeometry}" />
-    </DrawingGroup>
-    <DrawingBrush x:Key="AdditionIcon" Drawing="{StaticResource SimpleDrawingGroup}" />
-    <DrawingBrush x:Key="AddIcon" Drawing="{StaticResource SimpleDrawingGroup}" />
-    <DrawingBrush x:Key="MultiplyIcon" Drawing="{StaticResource SimpleDrawingGroup}" />
 
+    <DrawingGroup x:Key="microphone">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M17,12C17,14.7614237 14.7614237,17 12,17 9.23857625,17 7,14.7614237 7,12 M12,17L12,21" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <RectangleGeometry RadiusX="2" RadiusY="2" Rect="10,4,4,10" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+
+    <DrawingGroup x:Key="activity">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M21,14L21,14 18,14 15,7 10,17 7,11 5,14 3,14" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+
+    <DrawingGroup x:Key="notebook">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M9,8L14,8" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M18,3L18,21 6,21A1,1,0,0,1,5,20L5,4A1,1,0,0,1,6,3L18,3z" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M5,19L5,18A1,1,0,0,1,6,17L18,17" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+
+    <DrawingGroup x:Key="pause">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <RectangleGeometry RadiusX="0" RadiusY="0" Rect="5,4,4,16" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <RectangleGeometry RadiusX="0" RadiusY="0" Rect="15,4,4,16" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+
+    <DrawingGroup x:Key="video">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M18,12L18,12 9,16.9 9,7z" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <EllipseGeometry RadiusX="10" RadiusY="10" Center="12,12" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+    </DrawingGroup>
+
+    <DrawingGroup x:Key="volume-quiet">
+        <DrawingGroup.ClipGeometry>
+            <RectangleGeometry Rect="0,0,24,24" />
+        </DrawingGroup.ClipGeometry>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M13,5L13,19 8,15 3,15 3,9 8,9z" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Round" EndLineCap="Round" LineJoin="Miter" MiterLimit="1" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M13,14C14.5,13,14.5,11,13,10" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <GeometryDrawing>
+            <GeometryDrawing.Pen>
+                <Pen Brush="#FF2329D6" Thickness="1" StartLineCap="Square" EndLineCap="Square" LineJoin="Miter" />
+            </GeometryDrawing.Pen>
+            <GeometryDrawing.Geometry>
+                <PathGeometry FillRule="Nonzero" Figures="M16,16C18.0858253,13.9141747,18.0858253,10.0858253,16,8" />
+            </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+
+    </DrawingGroup>
+
+    <DrawingBrush x:Key="SpeechToTextStreamingScopeIcon" Drawing="{StaticResource activity}"/>
+    <DrawingBrush x:Key="StartStreamingRecognizeIcon" Drawing="{StaticResource video}"/>
+    <DrawingBrush x:Key="StopStreamingRecognizeIcon" Drawing="{StaticResource pause}"/>
+    <DrawingBrush x:Key="ReadStreamingRecognizeIcon" Drawing="{StaticResource volume-quiet}"/>
+    <DrawingBrush x:Key="SpeechToTextFileScopeIcon" Drawing="{StaticResource microphone}"/>
+    <DrawingBrush x:Key="RecognizeAudioFileIcon" Drawing="{StaticResource notebook}"/>
 
 </ResourceDictionary>
