@@ -346,4 +346,24 @@
   <data name="StartStreamingRecognize_ModelId_DisplayName" xml:space="preserve">
     <value>Translator Model Id</value>
   </data>
+  <data name="StartStreamingRecognize_LiveCaptionTopMost_Description" xml:space="preserve">
+    <value>If checked, Display Live Caption always top most on screen.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_LiveCaptionTopMost_DisplayName" xml:space="preserve">
+    <value>Live Caption Top Most</value>
+    <comment>property name</comment>
+  </data>
+  <data name="StartStreamingRecognize_LiveTranslator_Description" xml:space="preserve">
+    <value>If checked, Translate voice recognition result</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_LiveTranslator_DisplayName" xml:space="preserve">
+    <value>Live Translator</value>
+    <comment>property name</comment>
+  </data>
+  <data name="ValidationValue_LiveTranslator_Error" xml:space="preserve">
+    <value>If LiveTranslator checked, Please provide a value for {0}.</value>
+    <comment>error message</comment>
+  </data>
 </root>

@@ -261,7 +261,7 @@
     <comment>property name</comment>
   </data>
   <data name="StartStreamingRecognize_APIKey_Description" xml:space="preserve">
-    <value>IBM Language Translator APIキーを入力してください</value>
+    <value>IBM Language Translator APIキーを入力します。</value>
     <comment>property description</comment>
   </data>
   <data name="StartStreamingRecognize_APIKey_DisplayName" xml:space="preserve">
@@ -269,7 +269,7 @@
     <comment>property name</comment>
   </data>
   <data name="StartStreamingRecognize_Description" xml:space="preserve">
-    <value />
+    <value>リアルタイム音声認識を開始します。</value>
     <comment>activity description</comment>
   </data>
   <data name="StartStreamingRecognize_DisplayName" xml:space="preserve">
@@ -284,22 +284,38 @@
     <value>出力ファイルパス</value>
     <comment>property name</comment>
   </data>
+  <data name="StartStreamingRecognize_LiveCaptionTopMost_Description" xml:space="preserve">
+    <value>字幕を常に最前面に表示するかどうかを指定します。</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_LiveCaptionTopMost_DisplayName" xml:space="preserve">
+    <value>字幕を常に最前面に表示する</value>
+    <comment>property name</comment>
+  </data>
   <data name="StartStreamingRecognize_LiveCaption_Description" xml:space="preserve">
-    <value>画面に字幕を表示します</value>
+    <value>画面に字幕を表示します。</value>
     <comment>activity description</comment>
   </data>
   <data name="StartStreamingRecognize_LiveCaption_DisplayName" xml:space="preserve">
     <value>字幕表示</value>
     <comment>activity name</comment>
   </data>
+  <data name="StartStreamingRecognize_LiveTranslator_Description" xml:space="preserve">
+    <value>音声認識結果を翻訳するかどうかを指定します。</value>
+    <comment>property description</comment>
+  </data>
+  <data name="StartStreamingRecognize_LiveTranslator_DisplayName" xml:space="preserve">
+    <value>ライブ翻訳</value>
+    <comment>property name</comment>
+  </data>
   <data name="StartStreamingRecognize_ModelId_Description" xml:space="preserve">
-    <value>翻訳Model ID</value>
+    <value>翻訳Model IDを入力します。</value>
   </data>
   <data name="StartStreamingRecognize_ModelId_DisplayName" xml:space="preserve">
     <value>翻訳Model ID</value>
   </data>
   <data name="StartStreamingRecognize_URL_Description" xml:space="preserve">
-    <value>IBM Language Translator URLを入力してください</value>
+    <value>IBM Language Translator URLを入力します。</value>
     <comment>property description</comment>
   </data>
   <data name="StartStreamingRecognize_URL_DisplayName" xml:space="preserve">
@@ -307,7 +323,7 @@
     <comment>property name</comment>
   </data>
   <data name="StopStreamingRecognize_Description" xml:space="preserve">
-    <value />
+    <value>リアルタイム音声認識を終了します。</value>
     <comment>activity description</comment>
   </data>
   <data name="StopStreamingRecognize_DisplayName" xml:space="preserve">
@@ -345,5 +361,9 @@
   <data name="ValidationValue_Error" xml:space="preserve">
     <value>{0}の値を入力してください。</value>
     <comment>error message; {0} is the name of a missing property</comment>
+  </data>
+  <data name="ValidationValue_LiveTranslator_Error" xml:space="preserve">
+    <value>ライブ翻訳を有効にする場合、 {0}の値を入力してください。</value>
+    <comment>error message</comment>
   </data>
 </root>
