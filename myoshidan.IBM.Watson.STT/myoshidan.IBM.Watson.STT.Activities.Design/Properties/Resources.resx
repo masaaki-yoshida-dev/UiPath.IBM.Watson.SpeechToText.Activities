@@ -122,7 +122,7 @@
     <comment>category</comment>
   </data>
   <data name="CategoryStreaming" xml:space="preserve">
-    <value>myoshidan.IBMWatson.SpeechToText.Streaming</value>
+    <value>myoshidan.LiveCaptionTranslator</value>
     <comment>category</comment>
   </data>
   <data name="Collection" xml:space="preserve">

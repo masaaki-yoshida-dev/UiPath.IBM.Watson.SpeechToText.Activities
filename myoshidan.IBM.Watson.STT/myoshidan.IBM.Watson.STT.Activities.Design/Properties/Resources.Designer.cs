@@ -70,7 +70,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   myoshidan.IBMWatson.SpeechToText.Streaming に類似しているローカライズされた文字列を検索します。
+        ///   myoshidan.LiveCaptionTranslator に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string CategoryStreaming {
             get {
