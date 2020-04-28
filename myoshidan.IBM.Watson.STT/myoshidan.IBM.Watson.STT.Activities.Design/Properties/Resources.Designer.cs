@@ -61,7 +61,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   myoshidan.IBMWatson.SpeechToText.File に類似しているローカライズされた文字列を検索します。
+        ///   IBMWatson.SpeechToText.File に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string CategoryFile {
             get {
@@ -70,7 +70,7 @@ namespace myoshidan.IBM.Watson.STT.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   myoshidan.LiveCaptionTranslator に類似しているローカライズされた文字列を検索します。
+        ///   LiveCaptionTranslator に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string CategoryStreaming {
             get {

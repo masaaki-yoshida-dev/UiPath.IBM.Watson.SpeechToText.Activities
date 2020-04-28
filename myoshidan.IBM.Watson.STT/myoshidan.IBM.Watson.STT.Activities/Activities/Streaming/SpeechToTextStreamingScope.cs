@@ -104,7 +104,12 @@ namespace myoshidan.IBM.Watson.STT.Activities
             var service = new IBMWatsonSpeechToTextWebsocketService(region, token, model);
 
             var collection = new MMDeviceEnumerator().EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active);
-            var recoder = new AudioMemoryRecorder(collection.FirstOrDefault());
+            MMDevice device = collection.FirstOrDefault();
+            if (collection.Count() >= 2)
+            {
+                device = MMDeviceSelectDialog.ShowDialog("Select Audio Device",collection);
+            }
+            var recoder = new AudioMemoryRecorder(device);
             recoder.AudioMemoryWaveIn += Recoder_AudioMemoryWaveIn;
 
             _objectContainer.Add(service);

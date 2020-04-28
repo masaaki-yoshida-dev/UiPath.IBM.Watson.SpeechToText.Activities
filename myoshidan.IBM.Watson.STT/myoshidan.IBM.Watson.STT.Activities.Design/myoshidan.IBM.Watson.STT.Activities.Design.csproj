@@ -3,31 +3,31 @@
     <TargetFrameworks>net461</TargetFrameworks>
 		<RootNamespace>myoshidan.IBM.Watson.STT.Activities.Design</RootNamespace>
 		<AssemblyName>myoshidan.IBM.Watson.SpeechToText.Activities.Design</AssemblyName>
-    <PackageId>myoshidan.LiveCaptionTranslator.Activities</PackageId>
+    <PackageId>LiveCaptionTranslator.Activities</PackageId>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <Description>this package provide voice recognition and translation in real time, and the results can be displayed on the screen as subtitles. using IBM Watson Speech To Text and Language Translator Service</Description>
     <Authors>myoshidan</Authors>
     <Company>myoshidan</Company>
-    <Copyright>@ 2020 myoshidan</Copyright>
+    <Copyright></Copyright>
     <PackageTags>UiPath Activit𝗒 IBM Watson SpeechToText Live Caption</PackageTags>
     <PackageProjectUrl>https://github.com/masaaki-yoshida-dev/myoshidan.LiveCaptionTranslator.Activities</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
     <PackageIcon>packageIcon.png</PackageIcon>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
-    <PackageVersion>1.0.0.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
+    <PackageVersion>1.0.1.$([System.DateTime]::UtcNow.ToString(MMddHmmss))</PackageVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="Designers\File\RecognizeAudioFileDesigner.xaml.cs" />
@@ -67,8 +67,9 @@
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\myoshidan.IBM.Watson.STT.Activities.Design.xml</DocumentationFile>
-    <Product>myoshidan.LiveCaptionTranslator.Activities</Product>
+    <Product>LiveCaptionTranslator.Activities</Product>
     <PackageReleaseNotes>first release</PackageReleaseNotes>
+    <Version>1.0.1</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="IBM.Watson.LanguageTranslator.v3" Version="4.3.1" />
