@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LiveCaptionTranslator", "LiveCaptionTranslator", "{1B996259-BB41-4110-B2B0-B26FC4C57B48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveCaptionTranslator", "LiveCaptionTranslator\LiveCaptionTranslator\LiveCaptionTranslator.csproj", "{74ED0044-61EE-4AF6-915B-B4604C0710E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveCaptionTranslator.Activities", "LiveCaptionTranslator\LiveCaptionTranslator.Activities\LiveCaptionTranslator.Activities.csproj", "{E032E9B8-E86C-49F2-A606-AB7335A23E9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiveCaptionTranslator.Activities.Design", "LiveCaptionTranslator\LiveCaptionTranslator.Activities.Design\LiveCaptionTranslator.Activities.Design.csproj", "{DF22BB96-9CB2-479D-B28B-CAF077C50B08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{963B0A5E-353B-48F1-9813-204B57EAC4F4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.projitems*{4546856d-ea50-45c6-9419-eeeacb5a80aa}*SharedItemsImports = 13
+		Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.projitems*{df9c43f0-add3-4fbf-995e-84b92f9cbf25}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74ED0044-61EE-4AF6-915B-B4604C0710E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74ED0044-61EE-4AF6-915B-B4604C0710E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74ED0044-61EE-4AF6-915B-B4604C0710E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74ED0044-61EE-4AF6-915B-B4604C0710E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E032E9B8-E86C-49F2-A606-AB7335A23E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E032E9B8-E86C-49F2-A606-AB7335A23E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E032E9B8-E86C-49F2-A606-AB7335A23E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E032E9B8-E86C-49F2-A606-AB7335A23E9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF22BB96-9CB2-479D-B28B-CAF077C50B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF22BB96-9CB2-479D-B28B-CAF077C50B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF22BB96-9CB2-479D-B28B-CAF077C50B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF22BB96-9CB2-479D-B28B-CAF077C50B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74ED0044-61EE-4AF6-915B-B4604C0710E4} = {1B996259-BB41-4110-B2B0-B26FC4C57B48}
+		{E032E9B8-E86C-49F2-A606-AB7335A23E9B} = {1B996259-BB41-4110-B2B0-B26FC4C57B48}
+		{DF22BB96-9CB2-479D-B28B-CAF077C50B08} = {1B996259-BB41-4110-B2B0-B26FC4C57B48}
+		{4546856D-EA50-45C6-9419-EEEACB5A80AA} = {963B0A5E-353B-48F1-9813-204B57EAC4F4}
+		{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25} = {963B0A5E-353B-48F1-9813-204B57EAC4F4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76AA81A9-C61D-483E-B82D-73B30C177AE0}
+	EndGlobalSection
+EndGlobal
