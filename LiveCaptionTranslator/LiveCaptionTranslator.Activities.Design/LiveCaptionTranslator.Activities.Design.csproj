@@ -15,7 +15,7 @@
     <Copyright>© 2021 Masaaki Yoshida</Copyright>
     <PackageTags>UiPath Activit𝗒 IBM Watson SpeechToText Live Caption</PackageTags>
     <PackageProjectUrl>https://github.com/masaaki-yoshida-dev/myoshidan.LiveCaptionTranslator.Activities</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/myoshidan/LiveCaptionTranslator.Activities/master/LiveCaptionTranslator/LiveCaptionTranslator.Activities.Design/packageIcon.png</PackageIconUrl>
     <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
     <AssemblyVersion>1.2.0.0</AssemblyVersion>
     <FileVersion>1.2.0.0</FileVersion>
