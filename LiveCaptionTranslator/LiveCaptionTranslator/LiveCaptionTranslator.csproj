@@ -48,6 +48,6 @@
     <PackageReference Include="IBM.Watson.LanguageTranslator.v3" Version="4.3.1" />
     <PackageReference Include="IBM.Watson.SpeechToText.v1" Version="4.3.1" />
     <PackageReference Include="NAudio" Version="1.10.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 </Project>
